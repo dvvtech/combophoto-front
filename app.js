@@ -104,7 +104,7 @@ async function uploadFile(file) {
     });
     if (!res.ok) throw new Error('Upload failed');
     const data = await res.json();
-    return data.Url;
+    return data.url;
 }
 
 comboBtn.addEventListener('click', async () => {
